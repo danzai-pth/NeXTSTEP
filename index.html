@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+    <html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="public"/>  
+    <meta charset="UTF-8"> 
+    <title>这种玩笑  不好笑</title> 
+    <!-- 主题样式 -->
+    <link rel="stylesheet" href="https://zai.ink/usr/themes/YuJian/style/YuJian/normalize.css?v1.0.5">
+    <link rel="stylesheet" href="https://zai.ink/usr/themes/YuJian/style/YuJian/grid.css?v1.0.5">
+    <link rel="stylesheet" href="https://zai.ink/usr/themes/YuJian/style/YuJian/style.css?v1.0.5">
+    <link rel="preload" href="https://zai.ink/usr/themes/YuJian/img/2021090708405252.gif?v1.0.5" as="image"> 
+    
+        <!-- 进度条 -->  
+    <link rel="stylesheet" href="//zai.ink/usr/themes/YuJian/style/nprogress/nprogress.css"> 
+    <script src="//zai.ink/usr/themes/YuJian/style/nprogress/nprogress.js"></script>
+    <!-- 代码高亮 -->  
+    <link rel="stylesheet" href="//zai.ink/usr/themes/YuJian/style/prism/prism.css"> 
+    <script src="//zai.ink/usr/themes/YuJian/style/prism/prism.js"></script>
+    <!--JQuery-->
+    <script src="//zai.ink/usr/themes/YuJian/style/JQuery/jquery-3.3.1.min.js"></script> 
+    <!--JQuery Pjax-->
+    <script src="//zai.ink/usr/themes/YuJian/style/JQuery/jquery.pjax.js"></script>
+    <!-- 图片浏览 -->    
+    <link rel="stylesheet" href="//zai.ink/usr/themes/YuJian/style/fancybox/jquery.fancybox.min.css"> 
+    <script src="//zai.ink/usr/themes/YuJian/style/fancybox/jquery.fancybox.min.js"></script> 
+     
+    
+    <!--JQuery Pjax-->
+    <script >
+        $(document).pjax('a[target!=_blank]', '.YuJian-pjax', {scrollTo: 0,fragment:'.YuJian-pjax', timeout:10000});
+    </script> 
+    
+        
+    <!--统计代码输出-->
+     
+    
+    <!-- 通过自有函数输出HTML头部信息 -->
+    <meta name="description" content="[scode type=&quot;green&quot;]尽管它是这样的不完美，但还是希望大家能够喜欢！[/scode]语法由于我上的一个主题是handsome，所以部分短代码做了直接以handsome做的适配，..." />
+<meta name="keywords" content="主题,typecho,模板" />
+<meta name="generator" content="Typecho 1.2.1" />
+<meta name="template" content="YuJian" />
+<link rel="pingback" href="https://zai.ink/action/xmlrpc" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://zai.ink/action/xmlrpc?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://zai.ink/action/xmlrpc?wlw" />
+<link rel="alternate" type="application/rss+xml" title="YuJian - 一个简洁舒适的Typecho主题模板 &raquo; 载墨Blog &raquo; RSS 2.0" href="https://zai.ink/feed/219.html" />
+<link rel="alternate" type="application/rdf+xml" title="YuJian - 一个简洁舒适的Typecho主题模板 &raquo; 载墨Blog &raquo; RSS 1.0" href="https://zai.ink/feed/rss/219.html" />
+<link rel="alternate" type="application/atom+xml" title="YuJian - 一个简洁舒适的Typecho主题模板 &raquo; 载墨Blog &raquo; ATOM 1.0" href="https://zai.ink/feed/atom/219.html" />
+<script type="text/javascript">
+(function () {
+    window.TypechoComment = {
+        dom : function (id) {
+            return document.getElementById(id);
+        },
+    
+        create : function (tag, attr) {
+            var el = document.createElement(tag);
+        
+            for (var key in attr) {
+                el.setAttribute(key, attr[key]);
+            }
+        
+            return el;
+        },
+
+        reply : function (cid, coid) {
+            var comment = this.dom(cid), parent = comment.parentNode,
+                response = this.dom('respond-post-219'), input = this.dom('comment-parent'),
+                form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                textarea = response.getElementsByTagName('textarea')[0];
+
+            if (null == input) {
+                input = this.create('input', {
+                    'type' : 'hidden',
+                    'name' : 'parent',
+                    'id'   : 'comment-parent'
+                });
+
+                form.appendChild(input);
+            }
+
+            input.setAttribute('value', coid);
+
+            if (null == this.dom('comment-form-place-holder')) {
+                var holder = this.create('div', {
+                    'id' : 'comment-form-place-holder'
+                });
+
+                response.parentNode.insertBefore(holder, response);
+            }
+
+            comment.appendChild(response);
+            this.dom('cancel-comment-reply-link').style.display = '';
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea.focus();
+            }
+
+            return false;
+        },
+
+        cancelReply : function () {
+            var response = this.dom('respond-post-219'),
+            holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+
+            if (null != input) {
+                input.parentNode.removeChild(input);
+            }
+
+            if (null == holder) {
+                return true;
+            }
+
+            this.dom('cancel-comment-reply-link').style.display = 'none';
+            holder.parentNode.insertBefore(response, holder);
+            return false;
+        }
+    };
+})();
+</script>
+</head>
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="site-name col-mb-12 col-9">
+                                    <a id="logo" href="https://danzai-pth.github.io/NeXTSTEP/">这种玩笑，不好笑</a>
+                    <p class="description">所愿皆所得，所求皆所愿，所盼皆所期，所遇皆逢时</p>
+                            </div>
+        
+                   
+                </form>
+            </div>
+            <div class="col-mb-12">
+                <nav id="nav-menu" class="clearfix" role="navigation">
+   
+                                    </nav>
+            </div>
+        </div><!-- end .row -->
+    </div>
+</header><!-- end #header -->
+
+
+<div class="YuJian-pjax" >
+    
+<div id="body " >
+    <div class=" container">
+        <div class="row">
+
+    
+    
+
+<style>
+    .post-content .btn {
+        display: inline-block;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer; 
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } 
+    .post-content .btn.info {
+        background-color: #448AFF;
+    }
+    
+    .post-content .btn.success {
+        background-color: #4CAF50;
+    }
+
+</style>
+
+
+
+<div class="col-mb-12 col-8" id="post" role="post">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="post-title" itemprop="name headline">
+            <a itemprop="url"
+               href="https://zai.ink/219.html">这种玩笑  不好笑</a>
+        </h1>
+        <ul class="post-meta">
+            <li itemprop="author" itemscope itemtype="http://schema.org/Person">
+                作者: <a itemprop="name"
+                                       href="/"
+                                       rel="author">这种玩笑  不好笑</a>
+            </li>
+            <li>时间:                 <time datetime="2024-01-05T15:09:00+08:00" itemprop="datePublished">2024-07-13</time>
+            </li>
+            <li>分类: <a href="/">傻逼</a></li>
+            
+            <li itemprop="interactionCount">
+                <a itemprop="discussionUrl"
+                   href="/">0 条评论</a>
+            </li>
+            
+            
+        </ul>
+        <div class="post-content" itemprop="articleBody">
+        
+        
+        
+        
+        这种玩笑，不好笑
+            
+
+            
+
+    </article>
+
+    <div id="comments"> 
+    <script type="text/javascript">
+    (function () {
+        window.TypechoComment = {
+            dom : function (id) {
+                return document.getElementById(id);
+            },
+        
+            create : function (tag, attr) {
+                var el = document.createElement(tag);
+            
+                for (var key in attr) {
+                    el.setAttribute(key, attr[key]);
+                }
+            
+                return el;
+            },
+    
+            reply : function (cid, coid) {
+                var comment = this.dom(cid), parent = comment.parentNode,
+                    response = this.dom('respond-post-219'), input = this.dom('comment-parent'),
+                    form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                    textarea = response.getElementsByTagName('textarea')[0];
+                    
+                if (null == input) {
+                    input = this.create('input', {
+                        'type' : 'hidden',
+                        'name' : 'parent',
+                        'id'   : 'comment-parent'
+                    });
+    
+                    form.appendChild(input);
+                }
+    
+                input.setAttribute('value', coid);
+    
+                if (null == this.dom('comment-form-place-holder')) {
+                    var holder = this.create('div', {
+                        'id' : 'comment-form-place-holder'
+                    });
+    
+                    response.parentNode.insertBefore(holder, response);
+                }
+    
+                comment.appendChild(response);
+                this.dom('cancel-comment-reply-link').style.display = '';
+    
+                if (null != textarea && 'text' == textarea.name) {
+                    textarea.focus();
+                }
+    
+                return false;
+            },
+    
+            cancelReply : function () {
+                var response = this.dom('respond-post-219'),
+                holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+    
+                if (null != input) {
+                    input.parentNode.removeChild(input);
+                }
+    
+                if (null == holder) {
+                    return true;
+                }
+    
+                this.dom('cancel-comment-reply-link').style.display = 'none';
+                holder.parentNode.insertBefore(response, holder);
+                return false;
+            }
+        };
+    })();
+    </script>
+
+        </section>
+    
+            <section class="widget">
+            <h3 class="widget-title">其它</h3>
+            <ul class="widget-list">
+                                    这种玩笑  不好笑
+                    </li>
+            </ul>
+        </section>
+    
+</div><!-- end #sidebar -->
+        </div><!-- end .row -->
+    </div>
+</div><!-- end #body -->
+</div> 
+<footer id="footer" role="contentinfo">
+    
+        <p><a href="https://beian.miit.gov.cn/" target="_blank"> 鲁ICP备19058034号-3</a> </p>
+        
+    
+</footer><!-- end #footer -->
+</body>
+<script src="https://zai.ink/usr/themes/YuJian/style/YuJian/main.js?v1.0.5"></script> 
+
+<script> 
+    $(document).on('pjax:start', function(event){
+        NProgress.start();
+    });
+    $(document).on('pjax:end', function(event){ 
+        NProgress.done(); 
+        //JS依赖加载
+        $.getScript('https://zai.ink/usr/themes/YuJian/style/YuJian/main.js?v1.0.5');  
+        //代码高亮
+        Prism.highlightAll(); 
+        //用户自定义Pjax重载代码输出
+                
+    });
+</script> 
+</html>
