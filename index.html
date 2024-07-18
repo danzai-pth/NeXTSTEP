@@ -210,7 +210,194 @@
         
         
         
+        说在前面：
+            <div class="tip inlineBlock red">恶人先告状模型文件会飞的</div>
+            <div class="tip inlineBlock yellow">阅后即焚，但是公告没有说是否可用</div>
+            <div class="tip inlineBlock green">那就是可以用</div>
+            <div class="tip inlineBlock blue">即使是是否故意的</div>
+            <div class="tip inlineBlock red">为什么要禁言 甚至将我踢出</div>
+            <div class="tip inlineBlock share">模型文件 公开！</br> <a href="post.html"></a></div>
+            
+
+    
+
+<style>
+    .post-content .btn {
+        display: inline-block;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer; 
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    } 
+    .post-content .btn.info {
+        background-color: #448AFF;
+    }
+    
+    .post-content .btn.success {
+        background-color: #4CAF50;
+    }
+
+</style>
+
+
+
+<div class="col-mb-12 col-8" id="post" role="post">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="post-title" itemprop="name headline">
+            <a itemprop="url"
+               href="https://zai.ink/219.html">这种玩笑  不好笑</a>
+        </h1>
+        <ul class="post-meta">
+            <li itemprop="author" itemscope itemtype="http://schema.org/Person">
+                作者: <a itemprop="name"
+                                       href="/"
+                                       rel="author">这种玩笑  不好笑</a>
+            </li>
+            <li>时间:                 <time datetime="2024-01-05T15:09:00+08:00" itemprop="datePublished">2024-07-13</time>
+            </li>
+            <li>分类: <a href="/">傻逼</a></li>
+            
+            <li itemprop="interactionCount">
+                <a itemprop="discussionUrl"
+                   href="/">0 条评论</a>
+            </li>
+            
+            
+        </ul>
+        <div class="post-content" itemprop="articleBody">
         
+        
+        
+        
+       <div class="tip inlineBlock red">这种玩笑，不好笑<img src="不好笑2.jpg"></img><img src="不好笑1.jpg"><img src="傻逼.jpg"></img></img>"</div>
+            
+
+            
+
+    </article>
+
+    <div id="comments"> 
+    <script type="text/javascript">
+    (function () {
+        window.TypechoComment = {
+            dom : function (id) {
+                return document.getElementById(id);
+            },
+        
+            create : function (tag, attr) {
+                var el = document.createElement(tag);
+            
+                for (var key in attr) {
+                    el.setAttribute(key, attr[key]);
+                }
+            
+                return el;
+            },
+    
+            reply : function (cid, coid) {
+                var comment = this.dom(cid), parent = comment.parentNode,
+                    response = this.dom('respond-post-219'), input = this.dom('comment-parent'),
+                    form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                    textarea = response.getElementsByTagName('textarea')[0];
+                    
+                if (null == input) {
+                    input = this.create('input', {
+                        'type' : 'hidden',
+                        'name' : 'parent',
+                        'id'   : 'comment-parent'
+                    });
+    
+                    form.appendChild(input);
+                }
+    
+                input.setAttribute('value', coid);
+    
+                if (null == this.dom('comment-form-place-holder')) {
+                    var holder = this.create('div', {
+                        'id' : 'comment-form-place-holder'
+                    });
+    
+                    response.parentNode.insertBefore(holder, response);
+                }
+    
+                comment.appendChild(response);
+                this.dom('cancel-comment-reply-link').style.display = '';
+    
+                if (null != textarea && 'text' == textarea.name) {
+                    textarea.focus();
+                }
+    
+                return false;
+            },
+    
+            cancelReply : function () {
+                var response = this.dom('respond-post-219'),
+                holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+    
+                if (null != input) {
+                    input.parentNode.removeChild(input);
+                }
+    
+                if (null == holder) {
+                    return true;
+                }
+    
+                this.dom('cancel-comment-reply-link').style.display = 'none';
+                holder.parentNode.insertBefore(response, holder);
+                return false;
+            }
+        };
+    })();
+    </script>
+
+        </section>
+    
+            <section class="widget">
+            <h3 class="widget-title">其它</h3>
+            <ul class="widget-list">
+                                    这种玩笑  不好笑
+                    </li>
+            </ul>
+        </section>
+    
+</div><!-- end #sidebar -->
+        </div><!-- end .row -->
+    </div>
+</div><!-- end #body -->
+</div> 
+<footer id="footer" role="contentinfo">
+    
+        <p><a href="https://beian.miit.gov.cn/" target="_blank"> 鲁ICP备19058034号-3</a> </p>
+        
+    
+</footer><!-- end #footer -->
+</body>
+<script src="https://zai.ink/usr/themes/YuJian/style/YuJian/main.js?v1.0.5"></script> 
+
+<script> 
+    $(document).on('pjax:start', function(event){
+        NProgress.start();
+    });
+    $(document).on('pjax:end', function(event){ 
+        NProgress.done(); 
+        //JS依赖加载
+        $.getScript('https://zai.ink/usr/themes/YuJian/style/YuJian/main.js?v1.0.5');  
+        //代码高亮
+        Prism.highlightAll(); 
+        //用户自定义Pjax重载代码输出
+                
+    });
+</script> 
+        </html>
        <div class="tip inlineBlock red">这种玩笑，不好笑<img src="不好笑2.jpg"></img><img src="不好笑1.jpg"><img src="傻逼.jpg"></img></img>"</div>
             
 
